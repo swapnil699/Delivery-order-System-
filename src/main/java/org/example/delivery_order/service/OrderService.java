@@ -12,7 +12,7 @@ public interface OrderService {
     Order addOrder(String customerName, String address) throws InvalidNameException;
     List<Order> getOrdersByStatus(DeliveryStatus status);
     List<String> getTop3Customers();
-    void simulateOrderProcessing();
+    void  simulateOrderProcessing();
 
     Page<Order> getProductWithPagination(int offset, int pagesize);
 }

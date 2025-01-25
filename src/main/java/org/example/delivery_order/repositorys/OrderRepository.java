@@ -10,7 +10,7 @@ import java.util.List;
 
 @Repository
 public interface OrderRepository extends JpaRepository<Order, Long> {
-    List<Order> findByDeliveryStatus(DeliveryStatus status);
+    List<Order>  findByDeliveryStatus(DeliveryStatus status);
     @Query("SELECT o.name AS customerName, COUNT(o.id) AS deliveredOrders " +
             "FROM Order o WHERE o.deliveryStatus = 'DELIVERED' " +
             "GROUP BY o.name " +

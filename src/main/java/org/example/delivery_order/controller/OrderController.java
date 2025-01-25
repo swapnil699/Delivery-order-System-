@@ -44,7 +44,7 @@ public class OrderController {
         List<Order> orders = orderService.getOrdersByStatus(status);
         return orders;
     }
-    //pagination of all order list
+    //pagination of all order list    .
 
 //    @GetMapping("/pagination/{page}/{pagesize}")
 //    public Page<Order> getOrdersByStatus(@PathVariable int page, @PathVariable int pagesize) {
